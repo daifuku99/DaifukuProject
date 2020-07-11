@@ -1,4 +1,4 @@
-# Quasar App (daifuku_client)
+# Quasar App (daifuku_client_dev)
 
 A Quasar Framework app
 

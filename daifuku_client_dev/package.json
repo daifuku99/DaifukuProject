@@ -1,14 +1,11 @@
 {
-  "name": "daifuku_client",
+  "name": "daifuku_client_dev",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
   "author": "daifuku99 <fukushima9952@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "quasar dev",
-    "build": "quasar build",
-    "build:pwa": "quasar build -m pwa",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
