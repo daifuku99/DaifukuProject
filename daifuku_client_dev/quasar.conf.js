@@ -18,14 +18,10 @@ module.exports = function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
-    boot: [
-
-    ],
+    boot: [],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: [
-      'app.styl'
-    ],
+    css: ['app.styl'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
@@ -90,6 +86,7 @@ module.exports = function (/* ctx */) {
       // * 'all'  - Manually specify what to import
       importStrategy: 'all',
 
+      components: ['QBtn', 'QIcon'],
       // Quasar plugins
       plugins: []
     },
@@ -161,13 +158,11 @@ module.exports = function (/* ctx */) {
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
-
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
-
         // Windows only
         // win32metadata: { ... }
       },

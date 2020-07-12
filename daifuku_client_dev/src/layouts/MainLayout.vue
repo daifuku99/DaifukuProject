@@ -1,21 +1,32 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-black text-white">
         <q-btn
           flat
-          dense
           round
+          dense
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-        />
-
+        >
+        </q-btn>
         <q-toolbar-title>
-          Quasar App
+          Toolbar
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-btn
+          flat
+          round
+          dense
+          icon="sim_card"
+          class="q-mr-xs"
+        />
+        <q-btn
+          flat
+          round
+          dense
+          icon="gamepad"
+        />
       </q-toolbar>
     </q-header>
 
@@ -30,7 +41,7 @@
           header
           class="text-grey-8"
         >
-          Essential Links
+          Links
         </q-item-label>
         <EssentialLink
           v-for="link in essentialLinks"
