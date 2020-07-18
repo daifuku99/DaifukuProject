@@ -1,6 +1,6 @@
 # DaifukuServer
 
-## What's is this?
+## What is this?
 
 The purpose is under two things
 
