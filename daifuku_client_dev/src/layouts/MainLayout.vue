@@ -12,21 +12,8 @@
         >
         </q-btn>
         <q-toolbar-title>
-          Toolbar
+          Daifuku Projects
         </q-toolbar-title>
-        <q-btn
-          flat
-          round
-          dense
-          icon="sim_card"
-          class="q-mr-xs"
-        />
-        <q-btn
-          flat
-          round
-          dense
-          icon="gamepad"
-        />
       </q-toolbar>
     </q-header>
 
@@ -34,12 +21,12 @@
       v-model="leftDrawerOpen"
       show-if-above
       bordered
-      content-class="bg-grey-1"
+      content-class="bg-grey-10"
     >
       <q-list>
         <q-item-label
           header
-          class="text-grey-8"
+          class="text-white"
         >
           Links
         </q-item-label>
@@ -72,40 +59,22 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: [
         {
-          title: 'Docs',
-          caption: 'quasar.dev',
+          title: 'Profiles',
+          caption: 'Who is Daifuku?',
           icon: 'school',
           link: 'https://quasar.dev'
         },
         {
           title: 'Github',
-          caption: 'github.com/quasarframework',
+          caption: 'github.com/daifuku99/DaifukuProject',
           icon: 'code',
-          link: 'https://github.com/quasarframework'
-        },
-        {
-          title: 'Discord Chat Channel',
-          caption: 'chat.quasar.dev',
-          icon: 'chat',
-          link: 'https://chat.quasar.dev'
-        },
-        {
-          title: 'Forum',
-          caption: 'forum.quasar.dev',
-          icon: 'record_voice_over',
-          link: 'https://forum.quasar.dev'
+          link: 'https://github.com/daifuku99/DaifukuProject'
         },
         {
           title: 'Twitter',
-          caption: '@quasarframework',
+          caption: '@99_daiki',
           icon: 'rss_feed',
-          link: 'https://twitter.quasar.dev'
-        },
-        {
-          title: 'Facebook',
-          caption: '@QuasarFramework',
-          icon: 'public',
-          link: 'https://facebook.quasar.dev'
+          link: 'https://twitter.com/99_daiki'
         },
         {
           title: 'Quasar Awesome',
