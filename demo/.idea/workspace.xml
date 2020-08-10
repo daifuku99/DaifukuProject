@@ -25,9 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad05a6dc-2662-4516-bcff-f54112ec3b6e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../daifuku_server/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_server/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daifuku_server/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_server/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../daifuku_server/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_server/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../daifuku_client_dev/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_client_dev/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../daifuku_client_dev/src/pages/Index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_client_dev/src/pages/Index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../daifuku_client_dev/src/router/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_client_dev/src/router/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../daifuku_client_dev/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../daifuku_client_dev/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WELLCAB-EXAM" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -96,10 +97,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1595081002409">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1596604221342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595081002409" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596604221342" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1595080899330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
