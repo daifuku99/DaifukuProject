@@ -68,7 +68,7 @@ export default {
           title: 'Profiles',
           caption: 'Who is Daifuku?',
           icon: 'school',
-          link: '/Profiles'
+          link: 'Profiles'
         }
       ],
       essentialLinks: [

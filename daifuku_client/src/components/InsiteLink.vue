@@ -3,8 +3,8 @@
     clickable
     tag="a"
     target="_blank"
-    class="text-white"
     :to="link"
+    class="text-white"
   >
     <q-item-section
       v-if="icon"
