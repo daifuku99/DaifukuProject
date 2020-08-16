@@ -1,63 +1,71 @@
 <template>
   <q-page>
-    <q-list bordered class="rounded-borders q-pa-xl">
-      <q-expansion-item
-        expand-separator
-        icon="perm_identity"
-        label="Daifuku_Profiles"
-        caption="Who is Daifuku?"
-      >
-        <q-card>
-          <q-card-section>
-            My name is daiki fukushima. <br>
-            Work as Engineer, mainly server side. <br>
-            ・Like language is under <br>
-            ◇server side : Java, Go, Python, Ruby. <br>
-            ◇client side : javaScript, typeScript, HTML, css, scss, Json. <br>
-            <br>
-            ・Good at Flamework <br>
-            ◇server side : SpringBoot, gin, pyramid, onRails. <br>
-            ◇client side : Vue.js, quasar, bootStrap. <br>
-            <br>
-            Nice to meet you!!! :)
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
+  <div>
+    <q-splitter
+      v-model="splitterModel"
+      style="height: 500px"
+    >
 
-      <q-expansion-item
-        expand-separator
-        icon="drafts"
-        label="request form"
-      >
-        <q-card>
-          <q-card-section>
-            ・My Email Address <br>
-            fukushima9952@gmail.com <br>
-            Don't mess around //<br>
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
+      <template v-slot:before>
+        <q-tabs
+          v-model="tab"
+          vertical
+          class="text-teal"
+        >
+          <q-tab name="clientside" icon="dvr" label="CLIENT SIDE" />
+          <q-tab name="serverside" icon="router" label="SERVER SIDE" />
+          <q-tab name="tech" icon="engineering" label="TECH" />
+          <q-tab name="mails" icon="mail" label="MAIL" />
+        </q-tabs>
+      </template>
 
-      <q-expansion-item icon="assessment" label="Additional Information" disable>
-        <q-card>
-          <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-            commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
-          </q-card-section>
-        </q-card>
-      </q-expansion-item>
-    </q-list>
+      <template v-slot:after>
+        <q-tab-panels
+          v-model="tab"
+          animated
+          swipeable
+          vertical
+          transition-prev="jump-up"
+          transition-next="jump-up"
+        >
+          <q-tab-panel name="clientside">
+            <div class="text-h4 q-mb-md">CLIENT SIDE</div>
+            <p><b>No.1: paging</b></p>
+            <q-btn :loading="loading1" color="black" label="check" @click="paging" />
+            <p>No.2: xxxx</p>
+          </q-tab-panel>
+
+          <q-tab-panel name="serverside">
+            <div class="text-h4 q-mb-md">SERVER SIDE</div>
+            <p>No.1: xxxx</p>
+            <p>No.2: xxxx</p>
+          </q-tab-panel>
+
+          <q-tab-panel name="tech">
+            <div class="text-h4 q-mb-md">TECH</div>
+            <p><b>No.1: xxxx</b></p>
+            <p>No.2: xxxx</p>
+          </q-tab-panel>
+        </q-tab-panels>
+      </template>
+    </q-splitter>
+  </div>
     <router-view/>
   </q-page>
 </template>
 
 <script>
 export default {
+  methods: {
+    paging () {
+      this.$router.push({ path: '/Knowledge/paging' })
+    }
+  },
   data () {
     return {
-      left: false,
-      right: false
+      tab: 'mails',
+      splitterModel: 20,
+      loading1: false
     }
   }
 }
