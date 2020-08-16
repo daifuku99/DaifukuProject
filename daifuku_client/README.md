@@ -1,6 +1,10 @@
-# Quasar App (daifuku_client)
+# DaifukuProject (daifuku_client)
 
-A Quasar Framework app
+Daifuku_Client is make by Quasar Framework
+
+If you use this site , you must install quasar.
+
+Write Procedure to install quasar, Let's try it!!
 
 ## Install the dependencies
 ```bash
