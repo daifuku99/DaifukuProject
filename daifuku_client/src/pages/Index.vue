@@ -13,14 +13,14 @@
         padding
         arrows
         height="300px"
-        class="bg-blue text-white shadow-1 rounded-borders"
+        class="bg-dark text-white shadow-1 rounded-borders"
       >
         <q-carousel-slide name="style" class="column no-wrap flex-center">
           <q-icon name="account_box" size="100px" />
           <div class="q-mt-md text-center">
             {{ Slide1 }}
             <div class="q-pa-md messageBtn">
-              <q-btn :loading="loading1" color="black" label="Profiles" @click="Profiles"/>
+              <q-btn :loading="loading1" color="blue" label="Profiles" @click="Profiles"/>
             </div>
           </div>
         </q-carousel-slide>
@@ -28,6 +28,9 @@
           <q-icon name="mood" size="100px" />
           <div class="q-mt-md text-center">
             {{ Slide2 }}
+             <div class="q-pa-md messageBtn">
+              <q-btn :loading="loading1" color="blue" label="Knowledge" @click="Knowledge"/>
+            </div>
           </div>
         </q-carousel-slide>
         <q-carousel-slide name="layers" class="column no-wrap flex-center">
@@ -35,11 +38,11 @@
           <div class="q-mt-md text-center">
             {{ Slide3 }}
                 <div class="q-pa-md q-gutter-sm">
-                  <q-btn label="Let's Tamatebako" color="black" @click="confirm = true" />
+                  <q-btn label="Let's Tamatebako" color="blue" @click="confirm = true" />
                     <q-dialog v-model="confirm" persistent>
                       <q-card>
                         <q-card-section class="row items-center">
-                          <q-avatar color="black" text-color="white" />
+                          <q-icon name="warning" size="50px" color="red"/>
                             <span class="q-ml-sm">Can you permit to connect other web site to Google?</span>
                         </q-card-section>
                         <q-card-actions align="right">
@@ -62,7 +65,7 @@
           <div class="q-mt-md text-center">
             {{ Slide4 }}
             <div class="q-pa-md messageBtn">
-              <q-btn v-on:click="showNotif" color="black" label="Today_Message" />
+              <q-btn v-on:click="showNotif" color="blue" label="Today_Message" />
             </div>
           </div>
         </q-carousel-slide>
@@ -95,6 +98,9 @@ export default {
     },
     Profiles () {
       this.$router.push('/Profiles')
+    },
+    Knowledge () {
+      this.$router.push('/Knowledge')
     }
   },
   data () {
@@ -104,9 +110,9 @@ export default {
       link: 'https://www.google.co.jp/',
       slide: 'style',
       Slide1: 'This Website is Daifuku HomePages. Who is Daifuku?',
-      Slide2: 'Here is My Knowledge :)',
+      Slide2: 'Here is My Knowledge. :) Teach me everything . ;)',
       Slide3: 'Tamatebako makes you to search other keywords not use in life. Try It!!',
-      Slide4: 'Tap the button, return Today message'
+      Slide4: 'Tap the button, return Today message !!'
     }
   }
 }

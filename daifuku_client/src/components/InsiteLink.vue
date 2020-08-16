@@ -3,7 +3,7 @@
     clickable
     tag="a"
     target="_blank"
-    :to="link"
+    @click="transfer"
     class="text-white"
   >
     <q-item-section
@@ -28,6 +28,11 @@
 <script>
 export default {
   name: 'YourItems',
+  methods: {
+    transfer () {
+      this.$router.push(this.link)
+    }
+  },
   props: {
     title: {
       type: String,

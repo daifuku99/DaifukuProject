@@ -65,10 +65,22 @@ export default {
       leftDrawerOpen: false,
       insiteLinks: [
         {
+          title: 'Home',
+          caption: 'Home Page',
+          icon: 'home',
+          link: '/'
+        },
+        {
           title: 'Profiles',
           caption: 'Who is Daifuku?',
-          icon: 'school',
+          icon: 'face',
           link: 'Profiles'
+        },
+        {
+          title: 'Knowledge',
+          caption: 'My Knowledge',
+          icon: 'school',
+          link: 'Knowledge'
         }
       ],
       essentialLinks: [
