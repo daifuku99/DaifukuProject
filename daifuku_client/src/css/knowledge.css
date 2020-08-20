@@ -1,0 +1,17 @@
+.knowledge__link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.knowledge {
+  font-size: 16px;
+}
+
+.knowledge__paging {
+  color: blue;
+}
+
+.knowledge__link {
+  font-size: 16px;
+}
+/*# sourceMappingURL=knowledge.css.map */

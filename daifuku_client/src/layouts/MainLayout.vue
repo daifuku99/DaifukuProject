@@ -74,13 +74,13 @@ export default {
           title: 'Profiles',
           caption: 'Who is Daifuku?',
           icon: 'face',
-          link: 'Profiles'
+          link: '/Profiles'
         },
         {
           title: 'Knowledge',
           caption: 'My Knowledge',
           icon: 'school',
-          link: 'Knowledge'
+          link: '/Knowledge'
         }
       ],
       essentialLinks: [

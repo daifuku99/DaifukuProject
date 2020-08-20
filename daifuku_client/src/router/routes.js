@@ -13,7 +13,8 @@ const routes = [
         path: 'Knowledge',
         component: () => import('pages/Knowledge.vue'),
         children: [
-          { path: 'paging', component: () => import('pages/Paging.vue') }
+          { path: 'paging', component: () => import('pages/Paging.vue') },
+          { path: 'framework', component: () => import('pages/Framework.vue') }
         ]
       }
     ]

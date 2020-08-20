@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AASK,ACTL,gBDSW,CCTL;EACF,MAAM,EAAE,OAAO;EACf,eAAe,EAAE,SAAS;CAC7B;;ADDD,AAAA,UAAU,CAAC;EACP,SAAS,EAAE,IAAI;CAUlB;;AARI,AAAD,kBAAS,CAAC;EACN,KAAK,EAAE,IAAI;CACd;;AAEA,AAAD,gBAAO,CAAC;EAEJ,SAAS,EAAE,IAAI;CAClB",
+    "sources": [
+        "knowledge.scss",
+        "global.scss"
+    ],
+    "names": [],
+    "file": "knowledge.css"
+}

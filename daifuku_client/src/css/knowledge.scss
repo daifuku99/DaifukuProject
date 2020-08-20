@@ -1,0 +1,14 @@
+@import "global";
+
+.knowledge {
+    font-size: 16px;
+    
+    &__paging {
+        color: blue;
+    }
+
+    &__link {
+        @extend %link;
+        font-size: 16px;
+    }
+}

@@ -10,7 +10,7 @@
         <q-tabs
           v-model="tab"
           vertical
-          class="text-teal"
+          class="text-black"
         >
           <q-tab name="clientside" icon="dvr" label="CLIENT SIDE" />
           <q-tab name="serverside" icon="router" label="SERVER SIDE" />
@@ -30,9 +30,14 @@
         >
           <q-tab-panel name="clientside">
             <div class="text-h4 q-mb-md">CLIENT SIDE</div>
-            <p><b>No.1: paging</b></p>
-            <q-btn :loading="loading1" color="black" label="check" @click="paging" />
-            <p>No.2: xxxx</p>
+            <div class="text-h5 q-pa-md">◇No.1: paging</div>
+            <div class="q-pa-md knowledge__paging">
+              <q-btn :loading="loading1" label="check" @click="paging" />
+            </div>
+            <div class="text-h5 q-pa-md">◇No.2: framework</div>
+            <div class="q-pa-md knowledge__framework">
+              <q-btn :loading="loading1" color="black" label="check" @click="framework" />
+            </div>
           </q-tab-panel>
 
           <q-tab-panel name="serverside">
@@ -59,6 +64,9 @@ export default {
   methods: {
     paging () {
       this.$router.push({ path: '/Knowledge/paging' })
+    },
+    framework () {
+      this.$router.push({ path: '/Knowledge/framework' })
     }
   },
   data () {
