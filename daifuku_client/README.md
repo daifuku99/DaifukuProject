@@ -1,6 +1,6 @@
 # DaifukuProject (daifuku_client)
 
-Daifuku_Client is make by Quasar Framework
+Daifuku_Client is made by Quasar Framework
 
 If you use this site , you must install quasar.
 
