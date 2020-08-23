@@ -4,7 +4,8 @@ This Project is daifuku's output in private learning
 
 ## Daifuku_Client
 
-__Language
+
+__Language__
 
 *JavaScript
 *TypeScript
