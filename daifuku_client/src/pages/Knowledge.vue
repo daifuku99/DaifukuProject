@@ -36,7 +36,7 @@
             </div>
             <div class="text-h5 q-pa-md">◇No.2: framework</div>
             <div class="q-pa-md knowledge__framework">
-              <q-btn :loading="loading1" color="black" label="check" @click="framework" />
+              <q-btn :loading="loading1" label="check" @click="framework" />
             </div>
           </q-tab-panel>
 

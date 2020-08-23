@@ -1,6 +1,7 @@
 <template>
   <q-page>
     <p>How to paging </p>
+    <q-btn @click="paging">BACK</q-btn>
     <router-view/>
   </q-page>
 </template>
@@ -9,7 +10,7 @@
 export default {
   methods: {
     paging () {
-      this.$router.push('/paging')
+      this.$router.back('/')
     }
   },
   data () {

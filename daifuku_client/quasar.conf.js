@@ -26,7 +26,8 @@ module.exports = function (/* ctx */) {
     css: [
       'app.sass',
       'global.scss',
-      'knowledge.scss'
+      'knowledge.scss',
+      'profiles.scss'
     ],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras

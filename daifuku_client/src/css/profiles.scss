@@ -1,0 +1,18 @@
+@import "global";
+
+.profiles {
+    font-size: 16px;
+    
+    &__label {
+        color: black;
+        font-style: initial;
+    }
+
+    &__text {
+        color: darkslategray;
+
+        &--notion {
+            color: red;
+        }
+    }
+}
