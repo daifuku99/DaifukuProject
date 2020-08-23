@@ -2,9 +2,9 @@
 
 Daifuku_Client is made by Quasar Framework
 
-If you use this site , you must install quasar.
+If you use this code , you must install quasar.
 
-Write Procedure to install quasar, Let's try it!!
+Write procedure to install quasar, Let's try it!!
 
 ## Install the dependencies
 ```bash
