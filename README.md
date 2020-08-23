@@ -4,19 +4,19 @@ This Project is daifuku's output in private learning
 
 ## Daifuku_Client
 
-###Language
+__Language
 
 *JavaScript
 *TypeScript
 *Scss
 *HTML
 
-###Framework
+__Framework
 
 *Vue.js
 *quasar.js
 
-###Policy
+__Policy
 
 *BEM
 *Atomic Design
@@ -26,16 +26,16 @@ This Project is daifuku's output in private learning
 
 ## Daifuku_Server
 
-###Language
+__Language
 
 *Java
 *GO
 
-###Framework
+__Framework
 
 *SpringBoot
 *Gin
 
-###Policy
+__Policy
 
 *Anotation Driven
