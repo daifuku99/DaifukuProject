@@ -8,35 +8,44 @@ This Project is daifuku's output in private learning
 __Language__
 
 *JavaScript
+
 *TypeScript
+
 *Scss
+
 *HTML
 
-__Framework
+__Framework__
 
 *Vue.js
+
 *quasar.js
 
-__Policy
+__Policy__
 
 *BEM
+
 *Atomic Design
+
 *SPA
+
 *PWA
 
 
 ## Daifuku_Server
 
-__Language
+__Language__
 
 *Java
+
 *GO
 
-__Framework
+__Framework__
 
 *SpringBoot
+
 *Gin
 
-__Policy
+__Policy__
 
 *Anotation Driven
