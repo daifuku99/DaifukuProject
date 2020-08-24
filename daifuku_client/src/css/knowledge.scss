@@ -2,7 +2,12 @@
 
 .knowledge {
     font-size: 16px;
-    
+
+    &__card {
+        width: 100%;
+        max-width: 250px;
+    }
+
     &__paging {
         color: black;
     }
