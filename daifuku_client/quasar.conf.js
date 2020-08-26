@@ -18,23 +18,16 @@ module.exports = function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
-    boot: [
-
-    ],
+    boot: ['axios', 'lodash'],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: [
-      'app.sass',
-      'global.scss',
-      'knowledge.scss',
-      'profiles.scss'
-    ],
+    css: ['app.sass', 'global.scss', 'knowledge.scss', 'profiles.scss'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
       // 'mdi-v5',
-      // 'fontawesome-v5',
+      'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
@@ -87,7 +80,9 @@ module.exports = function (/* ctx */) {
       iconSet: 'material-icons', // Quasar icon set
       lang: 'en-us', // Quasar language pack
       config: {
-        notify: { /* look at QUASARCONFOPTIONS from the API card (bottom of page) */ }
+        notify: {
+          /* look at QUASARCONFOPTIONS from the API card (bottom of page) */
+        }
       },
 
       // Possible values for "importStrategy":
@@ -103,9 +98,7 @@ module.exports = function (/* ctx */) {
       // directives: [],
 
       // Quasar plugins
-      plugins: [
-        'Notify'
-      ]
+      plugins: ['Notify']
     },
 
     // animations: 'all', // --- includes all animations
@@ -175,13 +168,11 @@ module.exports = function (/* ctx */) {
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
-
         // OS X / Mac App Store
         // appBundleId: '',
         // appCategoryType: '',
         // osxSign: '',
         // protocol: 'myapp://path',
-
         // Windows only
         // win32metadata: { ... }
       },
