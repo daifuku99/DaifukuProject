@@ -6,6 +6,9 @@
     &__card {
         width: 100%;
         max-width: 250px;
+        text-align: center;
+        &--icon {
+        }
     }
 
     &__paging {
