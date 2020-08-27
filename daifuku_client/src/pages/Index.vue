@@ -1,5 +1,5 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="index flex flex-center">
   <div class="q-pa-md">
     <div class="q-gutter-md">
       <q-carousel
@@ -12,30 +12,30 @@
         navigation
         padding
         arrows
-        height="300px"
-        class="bg-dark text-white shadow-1 rounded-borders"
+        height="500px"
+        class="index__carousel bg-dark text-white shadow-1 rounded-borders"
       >
-        <q-carousel-slide name="style" class="column no-wrap flex-center">
+        <q-carousel-slide name="style" class="column flex-center">
           <q-icon name="account_box" size="100px" />
-          <div class="q-mt-md text-center">
+          <div class="index__carousel--text q-mt-md text-center">
             {{ Slide1 }}
             <div class="q-pa-md messageBtn">
               <q-btn :loading="loading1" color="blue" label="Profiles" @click="Profiles"/>
             </div>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide name="tv" class="column no-wrap flex-center">
+        <q-carousel-slide name="tv" class="index__carousel column no-wrap flex-center">
           <q-icon name="mood" size="100px" />
-          <div class="q-mt-md text-center">
+          <div class="index__carousel--text q-mt-md text-center">
             {{ Slide2 }}
              <div class="q-pa-md messageBtn">
               <q-btn :loading="loading1" color="blue" label="Knowledge" @click="Knowledge"/>
             </div>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide name="layers" class="column no-wrap flex-center">
+        <q-carousel-slide name="layers" class="index__carousel column no-wrap flex-center">
           <q-icon name="sms" size="100px" />
-          <div class="q-mt-md text-center">
+          <div class="index__carousel--text q-mt-md text-center">
             {{ Slide3 }}
                 <div class="q-pa-md q-gutter-sm">
                   <q-btn label="Let's Tamatebako" color="blue" @click="confirm = true" />
@@ -62,7 +62,7 @@
         </q-carousel-slide>
         <q-carousel-slide name="map" class="column no-wrap flex-center">
           <q-icon name="terrain" size="100px" />
-          <div class="q-mt-md text-center">
+          <div class="index__carousel--text q-mt-md text-center">
             {{ Slide4 }}
             <div class="q-pa-md messageBtn">
               <q-btn v-on:click="showNotif" color="blue" label="Today_Message" />
@@ -109,10 +109,10 @@ export default {
       loading1: false,
       link: 'https://www.google.co.jp/',
       slide: 'style',
-      Slide1: 'This Website is Daifuku HomePages. Who is Daifuku?',
-      Slide2: 'Here is My Knowledge. :) Teach me everything . ;)',
+      Slide1: 'This  Website  is  Daifuku  HomePages.  Who  is  Daifuku?',
+      Slide2: 'Here  is  My  Knowledge.  :)   Teach  me  everything  .  ;)',
       Slide3: 'Tamatebako makes you to search other keywords not use in life. Try It!!',
-      Slide4: 'Tap the button, return Today message !!'
+      Slide4: 'Tap  the  button  ,  return  Todays  message  !!'
     }
   }
 }

@@ -21,7 +21,7 @@ module.exports = function (/* ctx */) {
     boot: ['axios', 'lodash'],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: ['app.sass', 'global.scss', 'knowledge.scss', 'profiles.scss'],
+    css: ['app.sass', 'global.scss', 'index.scss', 'knowledge.scss', 'profiles.scss'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [

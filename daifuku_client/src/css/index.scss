@@ -1,0 +1,16 @@
+@import "global";
+
+.index {
+    font-size: 16px;
+
+    &__carousel {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        &--text {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+}
