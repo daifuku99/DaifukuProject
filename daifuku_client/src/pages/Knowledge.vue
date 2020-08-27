@@ -14,8 +14,9 @@
         >
           <q-tab name="clientside" icon="dvr" label="CLIENT SIDE" />
           <q-tab name="serverside" icon="router" label="SERVER SIDE" />
-          <q-tab name="tech" icon="engineering" label="TECH" />
-          <q-tab name="mails" icon="mail" label="MAIL" />
+          <q-tab name="framework" icon="engineering" label="FRAMEWORK" />
+          <q-tab name="infra" icon="fas fa-tools" label="INFRASTRUCTURE" />
+          <q-tab name="tools" icon="fas fa-tools" label="TOOLS" />
         </q-tabs>
       </template>
 
@@ -104,28 +105,140 @@
              </div>
           </q-tab-panel>
 
-          <q-tab-panel name="tech">
+          <q-tab-panel name="framework">
             <div class="text-h4 q-mb-md">FRAME WORK</div>
              <div class="q-pa-md row items-start q-gutter-md">
                 <q-card class="knowledge__card">
-                  <img src="https://cdn.quasar.dev/img/mountains.jpg">
+                  <i class="q-pa-md knowledge__card--icon fas fa-seedling fa-5x"></i>
                   <q-card-section>
-                    <div class="text-h6">◇No.1: xxxx</div>
-                    <div class="text-subtitle2">xxxx</div>
+                    <div class="text-h6">SPRING BOOT</div>
+                    <div class="q-pa-md text-subtitle2">Three Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
                   </q-card-section>
-                  <q-card-actions>
-                    <q-btn :loading="loading1" label="check" @click="paging" />
-                  </q-card-actions>
                 </q-card>
                 <q-card class="knowledge__card">
-                  <img src="https://cdn.quasar.dev/img/mountains.jpg">
+                  <i class="q-pa-md knowledge__card--icon fab fa-quora fa-5x"></i>
                   <q-card-section>
-                    <div class="text-h6">◇No.2: xxxx</div>
-                    <div class="text-subtitle2">xxxx</div>
+                    <div class="text-h6">quasar</div>
+                    <div class="q-pa-md text-subtitle2">One Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
                   </q-card-section>
-                  <q-card-actions>
-                    <q-btn :loading="loading1" label="check" @click="framework" />
-                  </q-card-actions>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-android fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">CORDOVA</div>
+                    <div class="q-pa-md text-subtitle2">One Months and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-stripe-s fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">STRUTS</div>
+                    <div class="q-pa-md text-subtitle2">One Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fas fa-cocktail fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">Gin</div>
+                    <div class="q-pa-md text-subtitle2">Now Studing</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+             </div>
+          </q-tab-panel>
+
+          <q-tab-panel name="infra">
+            <div class="text-h4 q-mb-md">INFRASTRUCTURE</div>
+             <div class="q-pa-md row items-start q-gutter-md">
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-aws fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">AWS</div>
+                    <div class="q-pa-md text-subtitle2">Two Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-linux fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">LINUX</div>
+                    <div class="q-pa-md text-subtitle2">Three Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fas fa-box fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">MYSQL</div>
+                    <div class="q-pa-md text-subtitle2">One Months and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fas fa-inbox fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">ORACLE</div>
+                    <div class="q-pa-md text-subtitle2">Two Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fas fa-cocktail fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">Gin</div>
+                    <div class="q-pa-md text-subtitle2">Now Studing</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+             </div>
+          </q-tab-panel>
+
+          <q-tab-panel name="tools">
+            <div class="text-h4 q-mb-md">TOOLS</div>
+             <div class="q-pa-md row items-start q-gutter-md">
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-github fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">GIT</div>
+                    <div class="q-pa-md text-subtitle2">Three Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-quora fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">quasar</div>
+                    <div class="q-pa-md text-subtitle2">One Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-android fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">CORDOVA</div>
+                    <div class="q-pa-md text-subtitle2">One Months and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fab fa-stripe-s fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">STRUTS</div>
+                    <div class="q-pa-md text-subtitle2">One Years and more</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
+                </q-card>
+                <q-card class="knowledge__card">
+                  <i class="q-pa-md knowledge__card--icon fas fa-cocktail fa-5x"></i>
+                  <q-card-section>
+                    <div class="text-h6">Gin</div>
+                    <div class="q-pa-md text-subtitle2">Now Studing</div>
+                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
+                  </q-card-section>
                 </q-card>
              </div>
           </q-tab-panel>
@@ -149,7 +262,7 @@ export default {
   },
   data () {
     return {
-      tab: 'mails',
+      tab: 'clientside',
       splitterModel: 20,
       loading1: false
     }
