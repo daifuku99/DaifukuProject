@@ -10,16 +10,20 @@
       >
         <q-card>
           <q-card-section class="profiles__text">
-            My name is daiki fukushima. <br>
-            Work as Engineer, mainly server side. <br>
-            <br>
-            ・Like language is under <br>
-            ◇server side : Java, Go, Python, Ruby. <br>
-            ◇client side : javaScript, typeScript, HTML, css, scss, Json. <br>
-            <br>
-            ・Good at Flamework <br>
-            ◇server side : SpringBoot, gin, pyramid, onRails. <br>
-            ◇client side : Vue.js, quasar, bootStrap. <br>
+            <p>My name is daiki fukushima. </p>
+            <p>Work as Engineer, mainly client side. </p>
+            <p class="profiles__text--title">・Like languages </p>
+                <q-tree
+                  :nodes="language"
+                  accordion
+                  node-key="label"
+                  :expanded.sync="expanded"
+                />
+            <p>◇server side : Java, Go, Python, Ruby. </p>
+            <p>◇client side : javaScript, typeScript, HTML, css, scss, Json. </p>
+            <p class="profiles__text--title">・Good at Flamework </p>
+            <p>◇server side : SpringBoot, gin, pyramid, onRails. </p>
+            <p>◇client side : Vue.js, quasar, bootStrap. </p>
             <br>
             Nice to meet you!!! :)
           </q-card-section>
@@ -34,10 +38,8 @@
       >
         <q-card>
           <q-card-section class="profiles__text">
-            ・My Email Address <br>
-            <br>
-            fukushima9952@gmail.com <br>
-            <br>
+            <p class="profiles__text--title">・My Email Address</p>
+            <p class="profiles__text--address">{{ mailAdress }}</p>
             <p class="profiles__text--notion">Don't mess around //<br></p>
           </q-card-section>
         </q-card>
@@ -62,7 +64,18 @@ export default {
   data () {
     return {
       left: false,
-      right: false
+      right: false,
+      mailAdress: 'fukushima9952@gmail.com',
+      language: [
+        {
+          label: '・Like languages ',
+          icon: 'check_circle',
+          children: [{
+            label: '◇server side :',
+            icon: 'check_circle'
+          }]
+        }
+      ]
     }
   }
 }
