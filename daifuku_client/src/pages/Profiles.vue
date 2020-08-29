@@ -12,19 +12,18 @@
           <q-card-section class="profiles__text">
             <p>My name is daiki fukushima. </p>
             <p>Work as Engineer, mainly client side. </p>
-            <p class="profiles__text--title">・Like languages </p>
+              <p class="profiles__text--title">
                 <q-tree
                   :nodes="language"
                   accordion
                   node-key="label"
-                  :expanded.sync="expanded"
                 />
-            <p>◇server side : Java, Go, Python, Ruby. </p>
-            <p>◇client side : javaScript, typeScript, HTML, css, scss, Json. </p>
-            <p class="profiles__text--title">・Good at Flamework </p>
-            <p>◇server side : SpringBoot, gin, pyramid, onRails. </p>
-            <p>◇client side : Vue.js, quasar, bootStrap. </p>
-            <br>
+                <q-tree
+                  :nodes="framework"
+                  accordion
+                  node-key="label"
+                />
+              </p>
             Nice to meet you!!! :)
           </q-card-section>
         </q-card>
@@ -48,9 +47,7 @@
       <q-expansion-item icon="assessment" label="Additional Information" disable>
         <q-card>
           <q-card-section>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
-            commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
-            eveniet doloribus ullam aliquid.
+            TODO: Additional Information
           </q-card-section>
         </q-card>
       </q-expansion-item>
@@ -72,8 +69,47 @@ export default {
           icon: 'check_circle',
           children: [{
             label: '◇server side :',
-            icon: 'check_circle'
+            children: [
+              { label: 'Java' },
+              { label: 'Go' },
+              { label: 'Python' },
+              { label: 'Ruby' }
+            ]
+          },
+          {
+            label: '◇client side :',
+            children: [
+              { label: 'javaScript' },
+              { label: 'typeScript' },
+              { label: 'HTML' },
+              { label: 'css' },
+              { label: 'scss' },
+              { label: 'JSON' }
+            ]
           }]
+        }
+      ],
+      framework: [
+        {
+          label: '・Good at Frameeork',
+          icon: 'check_circle',
+          children: [
+            {
+              label: '◇server side :',
+              children: [
+                { label: 'SpringBoot' },
+                { label: 'Gin' },
+                { label: 'pyramid' },
+                { label: 'onRails' }
+              ]
+            }, {
+              label: '◇client side :',
+              children: [
+                { label: 'Vue.js' },
+                { label: 'quasar' },
+                { label: 'bootStrap' }]
+            }
+          ]
         }
       ]
     }
