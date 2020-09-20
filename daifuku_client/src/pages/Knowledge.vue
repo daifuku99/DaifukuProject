@@ -208,38 +208,6 @@
                     <q-btn color="black" :loading="loading1" label="check" @click="paging" />
                   </q-card-section>
                 </q-card>
-                <q-card class="knowledge__card">
-                  <i class="q-pa-md knowledge__card--icon fab fa-quora fa-5x"></i>
-                  <q-card-section>
-                    <div class="text-h6">quasar</div>
-                    <div class="q-pa-md text-subtitle2">One Years and more</div>
-                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
-                  </q-card-section>
-                </q-card>
-                <q-card class="knowledge__card">
-                  <i class="q-pa-md knowledge__card--icon fab fa-android fa-5x"></i>
-                  <q-card-section>
-                    <div class="text-h6">CORDOVA</div>
-                    <div class="q-pa-md text-subtitle2">One Months and more</div>
-                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
-                  </q-card-section>
-                </q-card>
-                <q-card class="knowledge__card">
-                  <i class="q-pa-md knowledge__card--icon fab fa-stripe-s fa-5x"></i>
-                  <q-card-section>
-                    <div class="text-h6">STRUTS</div>
-                    <div class="q-pa-md text-subtitle2">One Years and more</div>
-                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
-                  </q-card-section>
-                </q-card>
-                <q-card class="knowledge__card">
-                  <i class="q-pa-md knowledge__card--icon fas fa-cocktail fa-5x"></i>
-                  <q-card-section>
-                    <div class="text-h6">Gin</div>
-                    <div class="q-pa-md text-subtitle2">Now Studing</div>
-                    <q-btn color="black" :loading="loading1" label="check" @click="paging" />
-                  </q-card-section>
-                </q-card>
              </div>
           </q-tab-panel>
         </q-tab-panels>

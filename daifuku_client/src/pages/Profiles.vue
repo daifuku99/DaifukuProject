@@ -65,7 +65,7 @@ export default {
       mailAdress: 'fukushima9952@gmail.com',
       language: [
         {
-          label: '・Like languages ',
+          label: 'Like languages ',
           icon: 'check_circle',
           children: [{
             label: '◇server side :',
@@ -91,7 +91,7 @@ export default {
       ],
       framework: [
         {
-          label: '・Good at Frameeork',
+          label: 'Good at Frameeork',
           icon: 'check_circle',
           children: [
             {
