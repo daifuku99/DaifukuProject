@@ -40,3 +40,12 @@ Gin<br>
 __Policy__
 
 Anotation Driven
+
+## Daifuku_API_Stub
+
+made by swagger
+
+__Language__
+
+JavaScript<br>
+
