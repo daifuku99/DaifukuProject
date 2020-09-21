@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: Daifuiku Api Stub
+  description: 'This is a daifuku api stub. '
+  contact:
+    email: fukushima9952@gmail.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+servers:
+- url: http://localhost:8001/api/v1
+  description: Daifuku server
+tags:
+- name: messages
+  description: Operations about today's messages
+  externalDocs:
+    description: make random messages
+    url: https://github.com/daifuku99/DaifukuProject/tree/master/daifuku_server
+paths:
+  /messages:
+    get:
+      tags:
+      - messages
+      summary: get today messages
+      description: Returns an array of Today messsages
+      operationId: messagesGET
+      parameters: []
+      responses:
+        "200":
+          description: A json array of todays messages
+          content:
+            application/json:
+              schema:
+                type: array
+                example:
+                  messagesList:
+                  - messageId: "1"
+                    messageName: NyaoNyao
+                    form:
+                      formName: aaa
+                      formId: "1"
+                items:
+                  $ref: '#/components/schemas/Messages'
+                x-content-type: application/json
+      x-swagger-router-controller: Messages
+    post:
+      tags:
+      - messages
+      summary: Create a new messages
+      description: Create a new messages
+      operationId: messagesPOST
+      parameters: []
+      requestBody:
+        description: messages to create
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Messages'
+            example:
+              messageId: "99"
+              messageName: Create Test
+              form:
+                formName: create test
+                formId: "1"
+      responses:
+        "201":
+          description: Complete to create Message
+      x-swagger-router-controller: Messages
+components:
+  schemas:
+    Messages:
+      required:
+      - messageId
+      type: object
+      properties:
+        messageId:
+          type: integer
+          format: int64
+        messageName:
+          type: string
