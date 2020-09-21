@@ -76,6 +76,9 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import * as types from '../store/mutation-types'
+
 export default {
   name: 'PageIndex',
   methods: {
@@ -92,9 +95,10 @@ export default {
     },
     showNotif () {
       this.$q.notify({
-        message: 'nyao',
+        message: this.$store.getters.getMessageByMessageId(1),
         color: 'black'
       })
+      console.log('getters:', this.$store.getters.getMessageByMessageId(1))
     },
     Profiles () {
       this.$router.push('/Profiles')
@@ -114,6 +118,12 @@ export default {
       Slide3: 'Tamatebako makes you to search other keywords not use in life. Try It!!',
       Slide4: 'Tap  the  button  ,  return  Todays  message  !!'
     }
+  },
+  computed: {
+    ...mapState(['messages'])
+  },
+  mounted () {
+    this.$store.dispatch(types.GET_TODAY_MESSAGE)
   }
 }
 </script>

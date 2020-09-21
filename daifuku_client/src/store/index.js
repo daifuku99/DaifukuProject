@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
 import example from './example'
+import * as types from './mutation-types'
 
 Vue.use(Vuex)
 
@@ -22,28 +23,23 @@ export default function () {
       ]
     },
     getters: {
-      messages: state => state.users
+      getMessageByMessageId: (state) => (id) => {
+        //        return state.messages.find(message => message.messageId === id)
+        return state.messages[id - 1].messageName
+      }
     },
     mutations: {
-      messagesList (state, payload) {
-        state.users = payload.users
+      [types.GET_TODAY_MESSAGE] (state, payload) {
+        state.messages = payload.messages
+        console.log('state.messages', state.messages)
       }
     },
     actions: {
-      async messagesList ({ commit }, messages) {
-        let paracnt = 0
+      async [types.GET_TODAY_MESSAGE] ({ commit }) {
         const params = new URLSearchParams()
-        if (messages.messageId !== '') {
-          paracnt++
-          params.append('messages', Number(messages.userId))
-        }
-
         console.log('https params = ', params.toString())
 
-        let urlGet = 'http://localhost:8080/api/v1/messages'
-        if (paracnt) {
-          urlGet = urlGet + '?' + params.toString()
-        }
+        const urlGet = 'http://localhost:8001/api/v1/messages'
 
         console.log('== url ==', urlGet)
 
@@ -53,9 +49,10 @@ export default function () {
           })
           .then(async response => {
             console.log('response data', response.data)
-            this.users = response.data
-            commit('messagesList', {
-              users: this.messages
+            this.messages = response.data.messagesList
+            console.log('this.messages : ', this.messages)
+            commit(types.GET_TODAY_MESSAGE, {
+              messages: this.messages
             })
           })
           .catch(error => {

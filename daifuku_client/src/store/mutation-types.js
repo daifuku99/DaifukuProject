@@ -1,0 +1,1 @@
+export const GET_TODAY_MESSAGE = 'GET_TODAY_MESSAGE'
