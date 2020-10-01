@@ -116,7 +116,7 @@ export default {
       Slide1: 'This  Website  is  Daifuku  HomePages.  Who  is  Daifuku?',
       Slide2: 'Here  is  My  Knowledge.  :)   Teach  me  everything  .  ;)',
       Slide3: 'Tamatebako makes you to search other keywords not use in life. Try It!!',
-      Slide4: 'Tap  the  button  ,  return  Todays  message  !!'
+      Slide4: 'Please tap  the  button  ,  return  Todays  message  !!'
     }
   },
   computed: {

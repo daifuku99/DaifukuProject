@@ -1,6 +1,7 @@
-/*
-import { Route } from 'vue-router'
+import { Route } from 'vue-router';
 import { Loading } from 'quasar';
+import { Dictionary } from "vue-router/types/router";
+import ErrorHelperMixin from '@/common/mixins/ErrorHelperMixin'
 
 export class VueEx {
 
